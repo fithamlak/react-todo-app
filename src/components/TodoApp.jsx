@@ -1,7 +1,14 @@
-const TodoApp = () => (
-  <>
-    <h1>Hello World!</h1>
-    <p>I am in a React Component!</p>
-  </>
-);
+import Header from './Header';
+import TodosLogic from './TodosLogic';
+
+function TodoApp() {
+  return (
+    <div className="wrapper">
+      <div className="todos">
+        <Header />
+        <TodosLogic />
+      </div>
+    </div>
+  );
+}
 export default TodoApp;
